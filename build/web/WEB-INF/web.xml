@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" 
+         version="3.1">
+         
+    <display-name>Agendamiento de Citas Odontológicas</display-name>
+
+    <!-- Configuración de Servlets -->
+    <servlet>
+        <servlet-name>AgendarCitaServlet</servlet-name>
+        <servlet-class>AgendarCitaServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AgendarCitaServlet</servlet-name>
+        <url-pattern>/AgendarCitaServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Archivo de bienvenida para redirigir a agendarCita.html -->
+    <welcome-file-list>
+        <welcome-file>agendarCita.html</welcome-file>
+    </welcome-file-list>
+
+</web-app>
+
+
+
+
